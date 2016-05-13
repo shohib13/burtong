@@ -364,40 +364,40 @@
 							<hr>
 							Jika ada pertanyaan, silakan isi form dibawah ini, kami akan menghubungi Anda secepatnya.
 							</p>
-							<form class="form-horizontal" role="form">
+							<form class="form-horizontal" action="mail-helper.php" method="post">
 							    <div class="form-group">
 									<label class="control-form col-md-3" for="name">Name</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control" id="name" placeholder="Nama Lengkap Anda">
+										<input type="text" class="form-control" name="nama" id="name" placeholder="Nama Lengkap Anda" required>
 									</div>
 								</div>
 								<div class="form-group">
 									<label class="control-form col-md-3" for="email">No. Telp</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control" id="telp" placeholder="No Telp/HP yang aktiv">
+										<input type="text" class="form-control" name="no_telepon" id="telp" placeholder="No Telp/HP yang aktiv" required>
 								</div>
 								</div>
 								<div class="form-group">
 									<label class="control-form col-md-3" for="alamat">Alamat</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control" id="alamat" placeholder="Alamat Rumah">
+										<input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat Rumah" required>
 								</div>
 								</div>
 								<div class="form-group">
 									<label class="control-form col-md-3" for="email">Email</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control" id="email" placeholder="Alamat Email aktiv">
+										<input type="text" class="form-control" name="email" id="email" placeholder="Alamat Email Aktif" required>
 									</div>
 								</div>
 								<div class="form-group">
 									<label class="control-form col-md-3" for="attentive">Pesan!</label>
 									<div class="col-md-9">
-										<textarea type="text" class="form-control" id="attentive" placeholder="Isi pesan anda disini"></textarea>
+										<textarea type="text" class="form-control" name="pesan" id="attentive" placeholder="Isi pesan anda disini" required></textarea>
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-md-9 col-md-offset-3">
-									<input type="button" class="btn btn-danger" value="Submit">
+									<button type="submit" class="btn btn-danger">Kirim</button> 
 									</div>
 								</div>
 							</form>
