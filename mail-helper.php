@@ -8,8 +8,8 @@ $mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
 $mail->SMTPAuth = true; // enable SMTP authentication
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; // set the SMTP port for the GMAIL server
-$mail->Username = "iqin.nux@gmail.com"; // GMAIL username
-$mail->Password = "lontong99"; // GMAIL password
+$mail->Username = "shohib13@gmail.com"; // GMAIL username
+$mail->Password = "pass"; // GMAIL password
 
 $nama = $_POST['nama'];
 $no_telepon = $_POST['no_telepon'];
@@ -25,7 +25,7 @@ $mail->From = $email;
 $mail->FromName = $nama;
 $mail->AddAddress($email, $nama);
 
-$mail->Subject = 'Pertanyaan Melalui Website';
+$mail->Subject = 'Pesan dari pengunjung Burtong.com';
 $message = '
 <table border="0" cellpadding="0" cellspacing="0" style="color:rgb(0,0,0);font-family:Times New Roman;font-size:medium" width="100%">
 	<tbody>
@@ -38,7 +38,7 @@ $message = '
 						<table width="100%">
 							<tbody>
 								<tr>
-									<td style="margin:0px"><img src="http://danautoba.org/wp-content/uploads/2015/03/cropped-cropped-cropped-cropped-logox.png" width="200px" class="CToWUd"></td>
+									<td style="margin:0px"><img src="http://burtong.com/img/logo.jpg" width="200px" class="CToWUd"></td>
 								</tr>
 								<tr>
 								</tr>
@@ -51,7 +51,7 @@ $message = '
 						<table border="0" cellpadding="0" cellspacing="0" width="100%">
 							<tbody>
 								<tr>
-									<td style="text-align:justify">Halo <b>'.$nama.' </b>, Terimakasih telah bergabung bersama kami di <b>Komunitas Yayasan Pecinta Danau Toba</b>, untuk pendaftaran member yang anda lakukan akan mendapatkan 1 (satu) poin yang akan di akumulasikan menjadi voucher belanja dan dapat di pergunakan di beberapa merchant yang telah berkerjasama dengan kami.<br><br></td>
+									<td style="text-align:justify">Halo Admin Burtong saya <b>'.$nama.' </b>, Nomor Telp saya '.$no_telepon.', alamat saya '.$alamat.' dan email saya '.$email.' <br><br></td>
 								</tr>
 								<tr>
 									<td>
@@ -59,9 +59,7 @@ $message = '
 											<tbody>
 												<tr>
 													<td style="font-family:Arial,sans-serif;margin:0px;padding:20px 0px 30px;color:rgb(88,88,90);font-size:16px;line-height:20px;text-align:justify">
-														Untuk mendapatkan nomor dan kartu keanggotaan <strong>Komunistas Sahabat Danau Toba</strong> dan bisa menggunakan fitur-fitur di website <a href="http://danautoba.org">danautoba.org</a> silahkan login untuk melengkapi foto profil serta biodata diri anda dengan informasi data yang sebenar-benarnya. Lengkapi biodata diri Anda <a href="http://danautoba.org/memberarea/check-login.php?u='.$email.'"><button>
-														DISINI
-														</button></a>
+														Pesan saya : '.$pesan.'
 													</td>
 												</tr>
 											</tbody>
@@ -73,9 +71,9 @@ $message = '
 						</td>
 					</tr>
 					<tr>
-						<td bgcolor="#f0f0f0" style="font-family:Open Sans,Arial,sans-serif;margin:0px;padding:10px 30px;line-height:23px"><b style="color:rgb(88,88,90)">INFO LEBIH LANJUT:</b><br>
-						<font style="font-size:16px;color:rgb(88,88,90)"><a href="http://danautoba.org" style="color:rgb(17,85,204)" target="_blank">http://danautoba.org</a><br>
-						<b><a href="https://www.facebook.com/yayasanpencintadanautoba" style="color:rgb(17,85,204)" target="_blank">Facebook</a></b>&nbsp;atau&nbsp;<b><a href="mailto:admin@danautoba.org" target="_top">admin@danautoba.org</a></b></font></td>
+						<td bgcolor="#f0f0f0" style="font-family:Open Sans,Arial,sans-serif;margin:0px;padding:10px 30px;line-height:23px"><b style="color:rgb(88,88,90)">CONTACT US BURTONG:</b><br>
+						<font style="font-size:16px;color:rgb(88,88,90)"><a href="http://burtong.com" style="color:rgb(17,85,204)" target="_blank">http://burtong.com</a><br>
+						<b><a href="https://www.facebook.com/phele.Sudden" style="color:rgb(17,85,204)" target="_blank">Facebook Admin</a></b>&nbsp;atau&nbsp;<b><a href="mailto:shohib13@gmail.com" target="_top">shohib13@gmail.com</a></b></font></td>
 					</tr>
 				</tbody>
 			</table>

@@ -332,7 +332,7 @@
 							  <img src="image/Gallery/meracik.jpg" alt="" class="img-responsive" />
 							</li>
 						  </ul>
-						</div>s
+						</div>
                   
 					</div>
 					
